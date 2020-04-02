@@ -1,5 +1,7 @@
 * Concrete Language Parser from Scratch
 
+- [[https://github.com/reedspool/concrete-lang-parser][Github Repository]]
+
 ** Technologies
 
 - [[https://xstate.js.org/docs/][XState.js]]
@@ -19,4 +21,6 @@ The whole project is very immature. I don't claim any expertise in Programming L
 ** Goals
 
 - Write the entire parser on Twitch, live streamed on my channel, [[https://twitch.tv/YesOperator][YesOperator]].
-- Have a parser where we can animate the entire process.
+- Have a parser where we can animate the entire process of parsing source in a browser.
+- Be able to parse an input file from a CLI and output the intermediary representation.
+- Be able to `require()` from another Node module and parse to the intermediary representation.

@@ -1,0 +1,22 @@
+* Concrete Language Parser from Scratch
+
+** Technologies
+
+- [[https://xstate.js.org/docs/][XState.js]]
+
+  XState is a Statechart library for JS. Statecharts are composable statemachines with a JSON description.
+
+  I have a prior parser in PEG.js. But I want a parser which I can both run quickly and also animate the entire process.
+
+  Since XState is a State Machine, we can pause it at any intermediary stage and preserve the state while we draw the current state.
+
+** Concrete Language
+
+Concrete is a pet project of mine. The syntax looks a lot like Forth or Factor, using Reverse Polish Notation (RPN). I do not have solid documentation for the entire language, yet. Luckily, we don't need to have a full specification to start writing a parser. Instead, I will describe the syntax here, incrementally, as I build up the parser.
+
+The whole project is very immature. I don't claim any expertise in Programming Language design or implementation.
+
+** Goals
+
+- Write the entire parser on Twitch, live streamed on my channel, [[https://twitch.tv/YesOperator][YesOperator]].
+- Have a parser where we can animate the entire process.

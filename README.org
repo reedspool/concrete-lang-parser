@@ -12,6 +12,12 @@
 
   Since XState is a State Machine, we can pause it at any intermediary stage and preserve the state while we draw the current state.
 
+- [[TypeScript]]
+
+  A parser is a really formal document. I haven't used Typescript a ton, but if there was ever a time to know that my outputs were of the shape that I expect, a parser would be it.
+
+- [[https://github.com/avajs/typescript][Unit test with AVA]]
+
 ** Concrete Language
 
 Concrete is a pet project of mine. The syntax looks a lot like Forth or Factor, using Reverse Polish Notation (RPN). I do not have solid documentation for the entire language, yet. Luckily, we don't need to have a full specification to start writing a parser. Instead, I will describe the syntax here, incrementally, as I build up the parser.
@@ -21,6 +27,23 @@ The whole project is very immature. I don't claim any expertise in Programming L
 ** Goals
 
 - Write the entire parser on Twitch, live streamed on my channel, [[https://twitch.tv/YesOperator][YesOperator]].
+- Write this in TypeScript (which I am a novice at!)
 - Have a parser where we can animate the entire process of parsing source in a browser.
 - Be able to parse an input file from a CLI and output the intermediary representation.
 - Be able to `require()` from another Node module and parse to the intermediary representation.
+- Everything is tested very thoroughly.
+
+** Tasks
+
+- [X] ~~*Make a project structure*~~ [2020-04-02]
+- [X] ~~*README.org*~~ [2020-04-02]
+- [X] ~~*Git repository*~~ [2020-04-02]
+- [X] ~~*TypeScript compiling with an NPM script*~~ [2020-04-02]
+- [X] ~~*AVA testing*~~ [2020-04-02]
+- [X] ~~*Make a successful red-green test with AVA and typescript*~~ [2020-04-02]
+- [X] ~~*Write exported functions signature that aligns with goals (wishful thinking)*~~ [2020-04-02]
+  - Didn't know enough yet to write those signatures
+- [ ] Write out TypeScript XState Machine inside tests
+  - [X] ~~*Workable base for that*~~ [2020-04-02]
+  - [ ] Write failing tests to practice with that interface
+  - [ ] Fill it in

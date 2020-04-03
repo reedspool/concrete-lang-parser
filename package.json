@@ -1,0 +1,44 @@
+{
+  "name": "concrete-lang-parser",
+  "version": "0.0.0",
+  "description": "Custom parser for Concrete Programming Language with XState.js",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --build tsconfig.json",
+    "test": "npm run compile && ava src/test/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reedspool/concrete-lang-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "programming-language",
+    "javascript",
+    "node",
+    "xstate",
+    "statecharts"
+  ],
+  "author": "Reed Spool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reedspool/concrete-lang-parser/issues"
+  },
+  "homepage": "https://github.com/reedspool/concrete-lang-parser#readme",
+  "devDependencies": {
+    "@ava/typescript": "^1.1.1",
+    "ava": "^3.5.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "xstate": "^4.8.0"
+  },
+
+	"ava": {
+		"typescript": {
+			"rewritePaths": {
+				"src/": "build/"
+			}
+		}
+	}
+}
